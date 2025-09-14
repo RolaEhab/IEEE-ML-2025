@@ -1,44 +1,61 @@
-This mini project was to explore the intepreility of XGBoot model using SHAP Algorithm
-Flavor sense data set was used in this projec
-https://www.kaggle.com/datasets/milapgohil/flavorsense-tastes-predicted-by-life-and-climate
-About Dataset
-A unique synthetic dataset that predicts food taste preferences—Spicy, Sweet, Sour, or Salty—based on lifestyle habits, sleep cycles, exercise levels, climate zones, and cultural cuisine exposure.
+# 🌶️ FlavorSense – Interpreting XGBoost with SHAP
 
-1.Multi-class Classification
+This mini-project explores the **interpretability** of an **XGBoost** model using the **SHAP (SHapley Additive exPlanations)** algorithm.  
+We use the [FlavorSense dataset](https://www.kaggle.com/datasets/milapgohil/flavorsense-tastes-predicted-by-life-and-climate), which predicts food taste preferences based on lifestyle and environmental factors.  
 
-2.EDA & Visualization
+---
 
-3. Preprocessing
+## 📊 About the Dataset
+**FlavorSense** is a unique synthetic dataset designed to predict an individual's taste preference (**🍛 Spicy, 🍬 Sweet, 🍋 Sour, or 🧂 Salty**) based on:  
+- 🏃 Lifestyle habits  
+- 🛌 Sleep cycle  
+- 🏋️ Exercise level  
+- 🌍 Climate zone  
+- 🍽️ Cultural cuisine exposure  
 
-5.XGBoost Model
+---
 
-6.SHAP for Interpretation
+## 🛠️ Project Workflow
+1. 🔎 **Exploratory Data Analysis (EDA)**  
+   - 📈 Data inspection, distribution plots, and correlation analysis  
+   - 🎨 Visualization of class balance and feature trends  
 
-To use the dataset directly from kaggle 
- First : Download you Kaggle API from Settings -> API -> Create New Token
+2. 🧹 **Data Preprocessing**  
+   - ❌ Handling missing values  
+   - 🔤 Encoding categorical variables  
+   - 📏 Scaling numerical features  
 
+3. 🤖 **Model Building with XGBoost**  
+   - 🎯 Multi-class classification  
+   - ⚙️ Hyperparameter tuning to improve accuracy & reduce overfitting  
 
- 
- <img width="674" height="211" alt="image" src="https://github.com/user-attachments/assets/e084dfa0-889e-43bd-8702-cc914a89c947" />
+4. 🧠 **Model Interpretation with SHAP**  
+   - 🌍 **Global interpretation:** SHAP summary plots, feature importance  
+   - 🔍 **Local interpretation:** Dependence plots, force plots for single predictions  
 
+---
 
+## 📥 Dataset Access
 
+You can use the dataset directly from Kaggle by following these steps:
 
+### 📝 Step 1: Get Your Kaggle API Key
+1. 🔗 Go to your [Kaggle account settings](https://www.kaggle.com/settings)  
+2. 🖱️ Scroll to the **API** section and click **Create New Token**  
+3. 💾 This will download a `kaggle.json` file to your computer  
 
- 
- Secondly : Run this cell in notebook and select the newly downloaded json file 
+![Kaggle API Download](https://github.com/user-attachments/assets/e084dfa0-889e-43bd-8702-cc914a89c947)
 
+---
 
+### 📤 Step 2: Upload API Key to Your Notebook
+Run this cell in your notebook and select the downloaded `kaggle.json` file:
 
- 
- <img width="673" height="98" alt="image" src="https://github.com/user-attachments/assets/35596a94-42cb-4cc2-96ca-9e085449c14b" />
+![Upload kaggle.json](https://github.com/user-attachments/assets/35596a94-42cb-4cc2-96ca-9e085449c14b)
 
+---
 
- 
- Next : Download the rest of the links 
+### ⬇️ Step 3: Download the Dataset
+Use the Kaggle API command to download and unzip the dataset:
 
-
- 
- <img width="780" height="607" alt="Screenshot 2025-09-14 172625" src="https://github.com/user-attachments/assets/d5199934-5b36-43d2-824b-0457070b9266" />
-
-
+![Kaggle download example](https://github.com/user-attachments/assets/d5199934-5b36-43d2-824b-0457070b9266)
